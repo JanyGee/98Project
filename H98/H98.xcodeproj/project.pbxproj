@@ -17,6 +17,8 @@
 		311B9EEE1F6F693100769113 /* JanyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEB1F6F693100769113 /* JanyMainViewController.swift */; };
 		311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEC1F6F693100769113 /* JanyNavigationController.swift */; };
 		311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EF31F6F69C300769113 /* Bundle+Extension.swift */; };
+		311B9EF81F6F6BAD00769113 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EF61F6F6BAD00769113 /* LICENSE */; };
+		311B9EF91F6F6BAD00769113 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EF71F6F6BAD00769113 /* README.md */; };
 		A1D59F3DA8AAAF7D0D995FE5 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36AB000D3778114A7E18EF2 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		311B9EEB1F6F693100769113 /* JanyMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanyMainViewController.swift; sourceTree = "<group>"; };
 		311B9EEC1F6F693100769113 /* JanyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanyNavigationController.swift; sourceTree = "<group>"; };
 		311B9EF31F6F69C300769113 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		311B9EF61F6F6BAD00769113 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		311B9EF71F6F6BAD00769113 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B36AB000D3778114A7E18EF2 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,7 @@
 		311B9EA51F6F5BF700769113 = {
 			isa = PBXGroup;
 			children = (
+				311B9EF51F6F6B8C00769113 /* Podspec Metadata */,
 				311B9EB01F6F5BF700769113 /* H98 */,
 				311B9EAF1F6F5BF700769113 /* Products */,
 				FB386EAF13B77EA85FDC7262 /* Pods */,
@@ -170,6 +175,15 @@
 			name = "Interactive(互动)";
 			sourceTree = "<group>";
 		};
+		311B9EF51F6F6B8C00769113 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				311B9EF61F6F6BAD00769113 /* LICENSE */,
+				311B9EF71F6F6BAD00769113 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 		FB386EAF13B77EA85FDC7262 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311B9EF81F6F6BAD00769113 /* LICENSE in Resources */,
 				311B9EBC1F6F5BF700769113 /* LaunchScreen.storyboard in Resources */,
 				311B9EDF1F6F68C400769113 /* Localizable.strings in Resources */,
 				311B9EB91F6F5BF700769113 /* Assets.xcassets in Resources */,
@@ -322,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311B9EF91F6F6BAD00769113 /* README.md in Sources */,
 				311B9EB21F6F5BF700769113 /* AppDelegate.swift in Sources */,
 				311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */,
 				311B9EED1F6F693100769113 /* JanyBaseViewController.swift in Sources */,
