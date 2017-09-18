@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a0f94e55-4b55-4330-a2b8-3aa8ce6ac66c++3642",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a0f94e55-4b55-4330-a2b8-3aa8ce6ac66c++3642" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B7D9EDD8BDA694EB5AD2DC01BCE1FC56DCEA4FD4" : 9223372036854775807,
+    "a0f94e55-4b55-4330-a2b8-3aa8ce6ac66c++3642" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9CFBD20F-4E71-49CD-A440-EE7F30B5227F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B7D9EDD8BDA694EB5AD2DC01BCE1FC56DCEA4FD4" : "",
+    "a0f94e55-4b55-4330-a2b8-3aa8ce6ac66c++3642" : "H98\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "H98",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "H98.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JanyGee\/98Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B7D9EDD8BDA694EB5AD2DC01BCE1FC56DCEA4FD4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.125\/11CW1418SP4_APPS02A_TRACKER_V17",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a0f94e55-4b55-4330-a2b8-3aa8ce6ac66c++3642"
+    }
+  ]
+}

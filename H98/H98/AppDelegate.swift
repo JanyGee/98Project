@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow()
         window?.backgroundColor = UIColor.white
-        let vc = NSClassFromString(Bundle.main.namespace() + "." + "JanyMainViewController") as! UIViewController.Type
+        let vc = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as! UIViewController.Type
         window?.rootViewController = vc.init()
         window?.makeKeyAndVisible()
         return true

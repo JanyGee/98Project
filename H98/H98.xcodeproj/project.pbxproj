@@ -31,6 +31,10 @@
 		311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F271F6F766B00769113 /* LYInteractiveViewController.swift */; };
 		311B9F2A1F6F767A00769113 /* LYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F291F6F767A00769113 /* LYMineViewController.swift */; };
 		311B9F2C1F6F77AA00769113 /* LYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F2B1F6F77AA00769113 /* LYLoginViewController.swift */; };
+		311B9F2E1F6FC01C00769113 /* LYRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F2D1F6FC01C00769113 /* LYRegistViewController.swift */; };
+		311B9F301F6FC03200769113 /* LYForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F2F1F6FC03200769113 /* LYForgetViewController.swift */; };
+		311B9F321F6FC04200769113 /* LYResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F311F6FC04200769113 /* LYResetViewController.swift */; };
+		311B9F341F6FC23100769113 /* LYTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F331F6FC23100769113 /* LYTitleView.swift */; };
 		A1D59F3DA8AAAF7D0D995FE5 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36AB000D3778114A7E18EF2 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,10 @@
 		311B9F271F6F766B00769113 /* LYInteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYInteractiveViewController.swift; sourceTree = "<group>"; };
 		311B9F291F6F767A00769113 /* LYMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYMineViewController.swift; sourceTree = "<group>"; };
 		311B9F2B1F6F77AA00769113 /* LYLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYLoginViewController.swift; sourceTree = "<group>"; };
+		311B9F2D1F6FC01C00769113 /* LYRegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYRegistViewController.swift; sourceTree = "<group>"; };
+		311B9F2F1F6FC03200769113 /* LYForgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYForgetViewController.swift; sourceTree = "<group>"; };
+		311B9F311F6FC04200769113 /* LYResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYResetViewController.swift; sourceTree = "<group>"; };
+		311B9F331F6FC23100769113 /* LYTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYTitleView.swift; sourceTree = "<group>"; };
 		B36AB000D3778114A7E18EF2 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,6 +187,7 @@
 		311B9EDE1F6F684E00769113 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				311B9F331F6FC23100769113 /* LYTitleView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				311B9EEB1F6F693100769113 /* JanyMainViewController.swift */,
-				311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */,
 				311B9EEC1F6F693100769113 /* JanyNavigationController.swift */,
+				311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -261,6 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				311B9F2B1F6F77AA00769113 /* LYLoginViewController.swift */,
+				311B9F2D1F6FC01C00769113 /* LYRegistViewController.swift */,
+				311B9F2F1F6FC03200769113 /* LYForgetViewController.swift */,
+				311B9F311F6FC04200769113 /* LYResetViewController.swift */,
 			);
 			name = "Login(登录)";
 			sourceTree = "<group>";
@@ -422,6 +434,7 @@
 			files = (
 				311B9EB21F6F5BF700769113 /* AppDelegate.swift in Sources */,
 				311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */,
+				311B9F301F6FC03200769113 /* LYForgetViewController.swift in Sources */,
 				311B9F191F6F6C2700769113 /* UILabel+CZAddition.m in Sources */,
 				311B9F261F6F765800769113 /* LYHomeViewController.swift in Sources */,
 				311B9F161F6F6C2700769113 /* NSString+Hash.m in Sources */,
@@ -435,10 +448,13 @@
 				311B9F1A1F6F6C2700769113 /* UIScreen+CZAddition.m in Sources */,
 				311B9F1B1F6F6C2700769113 /* UIView+CZAddition.m in Sources */,
 				311B9F2C1F6F77AA00769113 /* LYLoginViewController.swift in Sources */,
+				311B9F321F6FC04200769113 /* LYResetViewController.swift in Sources */,
 				311B9F121F6F6C2700769113 /* NSArray+CZAddition.m in Sources */,
+				311B9F2E1F6FC01C00769113 /* LYRegistViewController.swift in Sources */,
 				311B9F171F6F6C2700769113 /* UIButton+CZAddition.m in Sources */,
 				311B9F181F6F6C2700769113 /* UIColor+CZAddition.m in Sources */,
 				311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */,
+				311B9F341F6FC23100769113 /* LYTitleView.swift in Sources */,
 				311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
