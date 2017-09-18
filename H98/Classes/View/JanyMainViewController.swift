@@ -26,11 +26,9 @@ extension JanyMainViewController{
     func setupChildControllers() {
         
         let array = [
-            ["clsName":"JanyHomeViewController","title":"首页","imageName":"name"],
-            ["clsName":"JanyMessageViewController","title":"消息","imageName":"name"],
-            ["clsName":"UIViewController"],
-            ["clsName":"JanyDiscoverViewController","title":"发现","imageName":"name"],
-            ["clsName":"JanyProfileViewController","title":"我","imageName":"name"]
+            ["clsName":"LYHomeViewController","title":NSLocalizedString("first_Page", comment: "first_Page"),"imageName":"name"],
+            ["clsName":"LYInteractiveViewController","title":NSLocalizedString("Interactive", comment: "Interactive"),"imageName":"name"],
+            ["clsName":"LYMineViewController","title":NSLocalizedString("mine", comment: "mine"),"imageName":"name"],
                      ]
         
         var arrayM = [UIViewController]()

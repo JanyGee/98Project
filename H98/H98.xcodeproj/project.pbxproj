@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		311B9EB21F6F5BF700769113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EB11F6F5BF700769113 /* AppDelegate.swift */; };
-		311B9EB71F6F5BF700769113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EB51F6F5BF700769113 /* Main.storyboard */; };
 		311B9EB91F6F5BF700769113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EB81F6F5BF700769113 /* Assets.xcassets */; };
-		311B9EBC1F6F5BF700769113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EBA1F6F5BF700769113 /* LaunchScreen.storyboard */; };
 		311B9EDF1F6F68C400769113 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EE11F6F68C400769113 /* Localizable.strings */; };
 		311B9EE21F6F68C800769113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EE41F6F68C800769113 /* InfoPlist.strings */; };
 		311B9EED1F6F693100769113 /* JanyBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */; };
@@ -18,7 +16,21 @@
 		311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEC1F6F693100769113 /* JanyNavigationController.swift */; };
 		311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EF31F6F69C300769113 /* Bundle+Extension.swift */; };
 		311B9EF81F6F6BAD00769113 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EF61F6F6BAD00769113 /* LICENSE */; };
-		311B9EF91F6F6BAD00769113 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EF71F6F6BAD00769113 /* README.md */; };
+		311B9F121F6F6C2700769113 /* NSArray+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EFD1F6F6C2700769113 /* NSArray+CZAddition.m */; };
+		311B9F131F6F6C2700769113 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EFF1F6F6C2700769113 /* NSArray+Log.m */; };
+		311B9F141F6F6C2700769113 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F011F6F6C2700769113 /* NSAttributedString+CZAdditon.m */; };
+		311B9F151F6F6C2700769113 /* NSObject+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F031F6F6C2700769113 /* NSObject+CZAddition.m */; };
+		311B9F161F6F6C2700769113 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F051F6F6C2700769113 /* NSString+Hash.m */; };
+		311B9F171F6F6C2700769113 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F071F6F6C2700769113 /* UIButton+CZAddition.m */; };
+		311B9F181F6F6C2700769113 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F091F6F6C2700769113 /* UIColor+CZAddition.m */; };
+		311B9F191F6F6C2700769113 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F0B1F6F6C2700769113 /* UILabel+CZAddition.m */; };
+		311B9F1A1F6F6C2700769113 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F0D1F6F6C2700769113 /* UIScreen+CZAddition.m */; };
+		311B9F1B1F6F6C2700769113 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F0F1F6F6C2700769113 /* UIView+CZAddition.m */; };
+		311B9F1C1F6F6C2700769113 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F111F6F6C2700769113 /* UIViewController+CZAddition.m */; };
+		311B9F261F6F765800769113 /* LYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F251F6F765800769113 /* LYHomeViewController.swift */; };
+		311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F271F6F766B00769113 /* LYInteractiveViewController.swift */; };
+		311B9F2A1F6F767A00769113 /* LYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F291F6F767A00769113 /* LYMineViewController.swift */; };
+		311B9F2C1F6F77AA00769113 /* LYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F2B1F6F77AA00769113 /* LYLoginViewController.swift */; };
 		A1D59F3DA8AAAF7D0D995FE5 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36AB000D3778114A7E18EF2 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,9 +39,7 @@
 		14FD004934316D339B2E2330 /* Pods-H98.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H98.release.xcconfig"; path = "Pods/Target Support Files/Pods-H98/Pods-H98.release.xcconfig"; sourceTree = "<group>"; };
 		311B9EAE1F6F5BF700769113 /* H98.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H98.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311B9EB11F6F5BF700769113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		311B9EB61F6F5BF700769113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		311B9EB81F6F5BF700769113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		311B9EBB1F6F5BF700769113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311B9EBD1F6F5BF700769113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		311B9EE01F6F68C400769113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		311B9EE31F6F68C800769113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -43,6 +53,34 @@
 		311B9EF31F6F69C300769113 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		311B9EF61F6F6BAD00769113 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		311B9EF71F6F6BAD00769113 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		311B9EFB1F6F6C2700769113 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		311B9EFC1F6F6C2700769113 /* NSArray+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CZAddition.h"; sourceTree = "<group>"; };
+		311B9EFD1F6F6C2700769113 /* NSArray+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CZAddition.m"; sourceTree = "<group>"; };
+		311B9EFE1F6F6C2700769113 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		311B9EFF1F6F6C2700769113 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		311B9F001F6F6C2700769113 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		311B9F011F6F6C2700769113 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		311B9F021F6F6C2700769113 /* NSObject+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F031F6F6C2700769113 /* NSObject+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F041F6F6C2700769113 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		311B9F051F6F6C2700769113 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		311B9F061F6F6C2700769113 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F071F6F6C2700769113 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F081F6F6C2700769113 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F091F6F6C2700769113 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F0A1F6F6C2700769113 /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F0B1F6F6C2700769113 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F0C1F6F6C2700769113 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F0D1F6F6C2700769113 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F0E1F6F6C2700769113 /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F0F1F6F6C2700769113 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F101F6F6C2700769113 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		311B9F111F6F6C2700769113 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		311B9F231F6F6E0900769113 /* H98-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H98-Bridging-Header.h"; sourceTree = "<group>"; };
+		311B9F251F6F765800769113 /* LYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHomeViewController.swift; sourceTree = "<group>"; };
+		311B9F271F6F766B00769113 /* LYInteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYInteractiveViewController.swift; sourceTree = "<group>"; };
+		311B9F291F6F767A00769113 /* LYMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYMineViewController.swift; sourceTree = "<group>"; };
+		311B9F2B1F6F77AA00769113 /* LYLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYLoginViewController.swift; sourceTree = "<group>"; };
 		B36AB000D3778114A7E18EF2 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,10 +128,9 @@
 			children = (
 				311B9EDA1F6F684E00769113 /* Classes */,
 				311B9EB11F6F5BF700769113 /* AppDelegate.swift */,
-				311B9EB51F6F5BF700769113 /* Main.storyboard */,
 				311B9EB81F6F5BF700769113 /* Assets.xcassets */,
-				311B9EBA1F6F5BF700769113 /* LaunchScreen.storyboard */,
 				311B9EBD1F6F5BF700769113 /* Info.plist */,
+				311B9F231F6F6E0900769113 /* H98-Bridging-Header.h */,
 				311B9EE11F6F68C400769113 /* Localizable.strings */,
 				311B9EE41F6F68C800769113 /* InfoPlist.strings */,
 			);
@@ -122,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				311B9EF31F6F69C300769113 /* Bundle+Extension.swift */,
+				311B9EFA1F6F6C2700769113 /* Additions(快速遍历构造) */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -133,6 +171,7 @@
 				311B9EF01F6F694B00769113 /* Home(首页) */,
 				311B9EF21F6F695B00769113 /* Interactive(互动) */,
 				311B9EF11F6F695800769113 /* Mine(我的) */,
+				311B9F241F6F702100769113 /* Login(登录) */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,8 +186,8 @@
 		311B9EE91F6F692300769113 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */,
 				311B9EEB1F6F693100769113 /* JanyMainViewController.swift */,
+				311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */,
 				311B9EEC1F6F693100769113 /* JanyNavigationController.swift */,
 			);
 			name = Main;
@@ -157,6 +196,7 @@
 		311B9EF01F6F694B00769113 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				311B9F251F6F765800769113 /* LYHomeViewController.swift */,
 			);
 			name = "Home(首页)";
 			sourceTree = "<group>";
@@ -164,6 +204,7 @@
 		311B9EF11F6F695800769113 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				311B9F291F6F767A00769113 /* LYMineViewController.swift */,
 			);
 			name = "Mine(我的)";
 			sourceTree = "<group>";
@@ -171,6 +212,7 @@
 		311B9EF21F6F695B00769113 /* Interactive(互动) */ = {
 			isa = PBXGroup;
 			children = (
+				311B9F271F6F766B00769113 /* LYInteractiveViewController.swift */,
 			);
 			name = "Interactive(互动)";
 			sourceTree = "<group>";
@@ -182,6 +224,45 @@
 				311B9EF71F6F6BAD00769113 /* README.md */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		311B9EFA1F6F6C2700769113 /* Additions(快速遍历构造) */ = {
+			isa = PBXGroup;
+			children = (
+				311B9EFB1F6F6C2700769113 /* CZAdditions.h */,
+				311B9EFC1F6F6C2700769113 /* NSArray+CZAddition.h */,
+				311B9EFD1F6F6C2700769113 /* NSArray+CZAddition.m */,
+				311B9EFE1F6F6C2700769113 /* NSArray+Log.h */,
+				311B9EFF1F6F6C2700769113 /* NSArray+Log.m */,
+				311B9F001F6F6C2700769113 /* NSAttributedString+CZAdditon.h */,
+				311B9F011F6F6C2700769113 /* NSAttributedString+CZAdditon.m */,
+				311B9F021F6F6C2700769113 /* NSObject+CZAddition.h */,
+				311B9F031F6F6C2700769113 /* NSObject+CZAddition.m */,
+				311B9F041F6F6C2700769113 /* NSString+Hash.h */,
+				311B9F051F6F6C2700769113 /* NSString+Hash.m */,
+				311B9F061F6F6C2700769113 /* UIButton+CZAddition.h */,
+				311B9F071F6F6C2700769113 /* UIButton+CZAddition.m */,
+				311B9F081F6F6C2700769113 /* UIColor+CZAddition.h */,
+				311B9F091F6F6C2700769113 /* UIColor+CZAddition.m */,
+				311B9F0A1F6F6C2700769113 /* UILabel+CZAddition.h */,
+				311B9F0B1F6F6C2700769113 /* UILabel+CZAddition.m */,
+				311B9F0C1F6F6C2700769113 /* UIScreen+CZAddition.h */,
+				311B9F0D1F6F6C2700769113 /* UIScreen+CZAddition.m */,
+				311B9F0E1F6F6C2700769113 /* UIView+CZAddition.h */,
+				311B9F0F1F6F6C2700769113 /* UIView+CZAddition.m */,
+				311B9F101F6F6C2700769113 /* UIViewController+CZAddition.h */,
+				311B9F111F6F6C2700769113 /* UIViewController+CZAddition.m */,
+			);
+			name = "Additions(快速遍历构造)";
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		311B9F241F6F702100769113 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				311B9F2B1F6F77AA00769113 /* LYLoginViewController.swift */,
+			);
+			name = "Login(登录)";
 			sourceTree = "<group>";
 		};
 		FB386EAF13B77EA85FDC7262 /* Pods */ = {
@@ -260,10 +341,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				311B9EF81F6F6BAD00769113 /* LICENSE in Resources */,
-				311B9EBC1F6F5BF700769113 /* LaunchScreen.storyboard in Resources */,
 				311B9EDF1F6F68C400769113 /* Localizable.strings in Resources */,
 				311B9EB91F6F5BF700769113 /* Assets.xcassets in Resources */,
-				311B9EB71F6F5BF700769113 /* Main.storyboard in Resources */,
 				311B9EE21F6F68C800769113 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,34 +416,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				311B9EF91F6F6BAD00769113 /* README.md in Sources */,
 				311B9EB21F6F5BF700769113 /* AppDelegate.swift in Sources */,
 				311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */,
+				311B9F191F6F6C2700769113 /* UILabel+CZAddition.m in Sources */,
+				311B9F261F6F765800769113 /* LYHomeViewController.swift in Sources */,
+				311B9F161F6F6C2700769113 /* NSString+Hash.m in Sources */,
 				311B9EED1F6F693100769113 /* JanyBaseViewController.swift in Sources */,
 				311B9EEE1F6F693100769113 /* JanyMainViewController.swift in Sources */,
+				311B9F141F6F6C2700769113 /* NSAttributedString+CZAdditon.m in Sources */,
+				311B9F151F6F6C2700769113 /* NSObject+CZAddition.m in Sources */,
+				311B9F2A1F6F767A00769113 /* LYMineViewController.swift in Sources */,
+				311B9F131F6F6C2700769113 /* NSArray+Log.m in Sources */,
+				311B9F1C1F6F6C2700769113 /* UIViewController+CZAddition.m in Sources */,
+				311B9F1A1F6F6C2700769113 /* UIScreen+CZAddition.m in Sources */,
+				311B9F1B1F6F6C2700769113 /* UIView+CZAddition.m in Sources */,
+				311B9F2C1F6F77AA00769113 /* LYLoginViewController.swift in Sources */,
+				311B9F121F6F6C2700769113 /* NSArray+CZAddition.m in Sources */,
+				311B9F171F6F6C2700769113 /* UIButton+CZAddition.m in Sources */,
+				311B9F181F6F6C2700769113 /* UIColor+CZAddition.m in Sources */,
 				311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */,
+				311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		311B9EB51F6F5BF700769113 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				311B9EB61F6F5BF700769113 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		311B9EBA1F6F5BF700769113 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				311B9EBB1F6F5BF700769113 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		311B9EE11F6F68C400769113 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -486,12 +563,15 @@
 			baseConfigurationReference = 034D22DC3678F2AE2E8C7E59 /* Pods-H98.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W74YV9GZDZ;
 				INFOPLIST_FILE = H98/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LeYuan.H98;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITIOT.H98;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "H98/H98-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -501,12 +581,15 @@
 			baseConfigurationReference = 14FD004934316D339B2E2330 /* Pods-H98.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W74YV9GZDZ;
 				INFOPLIST_FILE = H98/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LeYuan.H98;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITIOT.H98;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "H98/H98-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
