@@ -1,0 +1,5 @@
+platform :ios,'9.0'
+target 'H98'do
+    pod 'BaiduMapKit'
+    pod 'GoogleMaps'
+end
