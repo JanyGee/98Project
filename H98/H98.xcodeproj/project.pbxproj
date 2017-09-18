@@ -11,6 +11,12 @@
 		311B9EB71F6F5BF700769113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EB51F6F5BF700769113 /* Main.storyboard */; };
 		311B9EB91F6F5BF700769113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EB81F6F5BF700769113 /* Assets.xcassets */; };
 		311B9EBC1F6F5BF700769113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EBA1F6F5BF700769113 /* LaunchScreen.storyboard */; };
+		311B9EDF1F6F68C400769113 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EE11F6F68C400769113 /* Localizable.strings */; };
+		311B9EE21F6F68C800769113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EE41F6F68C800769113 /* InfoPlist.strings */; };
+		311B9EED1F6F693100769113 /* JanyBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */; };
+		311B9EEE1F6F693100769113 /* JanyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEB1F6F693100769113 /* JanyMainViewController.swift */; };
+		311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EEC1F6F693100769113 /* JanyNavigationController.swift */; };
+		311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EF31F6F69C300769113 /* Bundle+Extension.swift */; };
 		A1D59F3DA8AAAF7D0D995FE5 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36AB000D3778114A7E18EF2 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,16 @@
 		311B9EB81F6F5BF700769113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		311B9EBB1F6F5BF700769113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311B9EBD1F6F5BF700769113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311B9EE01F6F68C400769113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		311B9EE31F6F68C800769113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		311B9EE51F6F68D800769113 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		311B9EE61F6F68D800769113 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		311B9EE71F6F68EF00769113 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		311B9EE81F6F68EF00769113 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanyBaseViewController.swift; sourceTree = "<group>"; };
+		311B9EEB1F6F693100769113 /* JanyMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanyMainViewController.swift; sourceTree = "<group>"; };
+		311B9EEC1F6F693100769113 /* JanyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanyNavigationController.swift; sourceTree = "<group>"; };
+		311B9EF31F6F69C300769113 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B36AB000D3778114A7E18EF2 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,85 +83,91 @@
 		311B9EB01F6F5BF700769113 /* H98 */ = {
 			isa = PBXGroup;
 			children = (
-				311B9EC31F6F5F9E00769113 /* Classes */,
+				311B9EDA1F6F684E00769113 /* Classes */,
 				311B9EB11F6F5BF700769113 /* AppDelegate.swift */,
 				311B9EB51F6F5BF700769113 /* Main.storyboard */,
 				311B9EB81F6F5BF700769113 /* Assets.xcassets */,
 				311B9EBA1F6F5BF700769113 /* LaunchScreen.storyboard */,
 				311B9EBD1F6F5BF700769113 /* Info.plist */,
+				311B9EE11F6F68C400769113 /* Localizable.strings */,
+				311B9EE41F6F68C800769113 /* InfoPlist.strings */,
 			);
 			path = H98;
 			sourceTree = "<group>";
 		};
-		311B9EC31F6F5F9E00769113 /* Classes */ = {
+		311B9EDA1F6F684E00769113 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				311B9EC61F6F5F9E00769113 /* View */,
-				311B9EC71F6F5F9E00769113 /* ViewModel */,
-				311B9EC41F6F5F9E00769113 /* Model */,
-				311B9EC51F6F5F9E00769113 /* Tools */,
+				311B9EDD1F6F684E00769113 /* View */,
+				311B9EDB1F6F684E00769113 /* Model */,
+				311B9EDE1F6F684E00769113 /* ViewModel */,
+				311B9EDC1F6F684E00769113 /* Tools */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
-		311B9EC41F6F5F9E00769113 /* Model */ = {
+		311B9EDB1F6F684E00769113 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		311B9EC51F6F5F9E00769113 /* Tools */ = {
+		311B9EDC1F6F684E00769113 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				311B9EF31F6F69C300769113 /* Bundle+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		311B9EC61F6F5F9E00769113 /* View */ = {
+		311B9EDD1F6F684E00769113 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				311B9EC81F6F5FE000769113 /* Main */,
-				311B9ECB1F6F609D00769113 /* Interaction(互动) */,
-				311B9ECA1F6F606400769113 /* Mine(我的) */,
-				311B9EC91F6F602500769113 /* Home(首页) */,
+				311B9EE91F6F692300769113 /* Main */,
+				311B9EF01F6F694B00769113 /* Home(首页) */,
+				311B9EF21F6F695B00769113 /* Interactive(互动) */,
+				311B9EF11F6F695800769113 /* Mine(我的) */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		311B9EC71F6F5F9E00769113 /* ViewModel */ = {
+		311B9EDE1F6F684E00769113 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		311B9EC81F6F5FE000769113 /* Main */ = {
+		311B9EE91F6F692300769113 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				311B9EEA1F6F693100769113 /* JanyBaseViewController.swift */,
+				311B9EEB1F6F693100769113 /* JanyMainViewController.swift */,
+				311B9EEC1F6F693100769113 /* JanyNavigationController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
 		};
-		311B9EC91F6F602500769113 /* Home(首页) */ = {
+		311B9EF01F6F694B00769113 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "Home(首页)";
 			sourceTree = "<group>";
 		};
-		311B9ECA1F6F606400769113 /* Mine(我的) */ = {
+		311B9EF11F6F695800769113 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "Mine(我的)";
 			sourceTree = "<group>";
 		};
-		311B9ECB1F6F609D00769113 /* Interaction(互动) */ = {
+		311B9EF21F6F695B00769113 /* Interactive(互动) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Interaction(互动)";
+			name = "Interactive(互动)";
 			sourceTree = "<group>";
 		};
 		FB386EAF13B77EA85FDC7262 /* Pods */ = {
@@ -205,6 +227,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 311B9EA51F6F5BF700769113;
 			productRefGroup = 311B9EAF1F6F5BF700769113 /* Products */;
@@ -222,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				311B9EBC1F6F5BF700769113 /* LaunchScreen.storyboard in Resources */,
+				311B9EDF1F6F68C400769113 /* Localizable.strings in Resources */,
 				311B9EB91F6F5BF700769113 /* Assets.xcassets in Resources */,
 				311B9EB71F6F5BF700769113 /* Main.storyboard in Resources */,
+				311B9EE21F6F68C800769113 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				311B9EB21F6F5BF700769113 /* AppDelegate.swift in Sources */,
+				311B9EF41F6F69C300769113 /* Bundle+Extension.swift in Sources */,
+				311B9EED1F6F693100769113 /* JanyBaseViewController.swift in Sources */,
+				311B9EEE1F6F693100769113 /* JanyMainViewController.swift in Sources */,
+				311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +349,26 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		311B9EE11F6F68C400769113 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311B9EE01F6F68C400769113 /* en */,
+				311B9EE51F6F68D800769113 /* zh-Hans */,
+				311B9EE71F6F68EF00769113 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		311B9EE41F6F68C800769113 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311B9EE31F6F68C800769113 /* en */,
+				311B9EE61F6F68D800769113 /* zh-Hans */,
+				311B9EE81F6F68EF00769113 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -326,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -375,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
