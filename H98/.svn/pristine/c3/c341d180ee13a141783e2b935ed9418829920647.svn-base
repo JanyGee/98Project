@@ -35,9 +35,6 @@
 		311B9F301F6FC03200769113 /* LYForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F2F1F6FC03200769113 /* LYForgetViewController.swift */; };
 		311B9F321F6FC04200769113 /* LYResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F311F6FC04200769113 /* LYResetViewController.swift */; };
 		311B9F341F6FC23100769113 /* LYTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9F331F6FC23100769113 /* LYTitleView.swift */; };
-		317165AF1F70F93900D9BE00 /* LYTxtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317165AE1F70F93900D9BE00 /* LYTxtView.swift */; };
-		31AA54311F710CD70046AAF5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA54301F710CD70046AAF5 /* UIView+Extension.swift */; };
-		31AA54331F7117680046AAF5 /* LYSecondLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA54321F7117680046AAF5 /* LYSecondLoginView.swift */; };
 		A1D59F3DA8AAAF7D0D995FE5 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36AB000D3778114A7E18EF2 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,9 +89,6 @@
 		311B9F2F1F6FC03200769113 /* LYForgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYForgetViewController.swift; sourceTree = "<group>"; };
 		311B9F311F6FC04200769113 /* LYResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYResetViewController.swift; sourceTree = "<group>"; };
 		311B9F331F6FC23100769113 /* LYTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYTitleView.swift; sourceTree = "<group>"; };
-		317165AE1F70F93900D9BE00 /* LYTxtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYTxtView.swift; sourceTree = "<group>"; };
-		31AA54301F710CD70046AAF5 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		31AA54321F7117680046AAF5 /* LYSecondLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYSecondLoginView.swift; sourceTree = "<group>"; };
 		B36AB000D3778114A7E18EF2 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				311B9EF31F6F69C300769113 /* Bundle+Extension.swift */,
-				31AA54301F710CD70046AAF5 /* UIView+Extension.swift */,
 				311B9EFA1F6F6C2700769113 /* Additions(快速遍历构造) */,
 			);
 			path = Tools;
@@ -195,8 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				311B9F331F6FC23100769113 /* LYTitleView.swift */,
-				317165AE1F70F93900D9BE00 /* LYTxtView.swift */,
-				31AA54321F7117680046AAF5 /* LYSecondLoginView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -455,17 +446,14 @@
 				311B9F131F6F6C2700769113 /* NSArray+Log.m in Sources */,
 				311B9F1C1F6F6C2700769113 /* UIViewController+CZAddition.m in Sources */,
 				311B9F1A1F6F6C2700769113 /* UIScreen+CZAddition.m in Sources */,
-				31AA54311F710CD70046AAF5 /* UIView+Extension.swift in Sources */,
 				311B9F1B1F6F6C2700769113 /* UIView+CZAddition.m in Sources */,
 				311B9F2C1F6F77AA00769113 /* LYLoginViewController.swift in Sources */,
-				31AA54331F7117680046AAF5 /* LYSecondLoginView.swift in Sources */,
 				311B9F321F6FC04200769113 /* LYResetViewController.swift in Sources */,
 				311B9F121F6F6C2700769113 /* NSArray+CZAddition.m in Sources */,
 				311B9F2E1F6FC01C00769113 /* LYRegistViewController.swift in Sources */,
 				311B9F171F6F6C2700769113 /* UIButton+CZAddition.m in Sources */,
 				311B9F181F6F6C2700769113 /* UIColor+CZAddition.m in Sources */,
 				311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */,
-				317165AF1F70F93900D9BE00 /* LYTxtView.swift in Sources */,
 				311B9F341F6FC23100769113 /* LYTitleView.swift in Sources */,
 				311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */,
 			);

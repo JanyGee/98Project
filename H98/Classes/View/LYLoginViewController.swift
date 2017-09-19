@@ -9,11 +9,18 @@
 import UIKit
 import SnapKit
 import Alamofire
+import Hero
 
 class LYLoginViewController: UIViewController {
 
     lazy var titleView:LYTitleView = LYTitleView()
-
+    lazy var txtField:LYTxtView = LYTxtView()
+    lazy var pwdField:LYTxtView = LYTxtView()
+    lazy var loginButton:UIButton = UIButton(type: .custom)
+    lazy var regBtn:UIButton = UIButton(type: .custom)
+    lazy var fogBtn:UIButton = UIButton(type: .custom)
+    lazy var bottomView:LYSecondLoginView = LYSecondLoginView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,15 +30,117 @@ class LYLoginViewController: UIViewController {
         setupUI()
     }
     
+    //MARK: 点击登录
+    func loginButtonClick() -> Void {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //MARK: 注册
+    func regClick() -> Void {
+        
+        guard let cls = NSClassFromString(Bundle.main.namespace() + "." + "LYRegistViewController") as? UIViewController.Type else {
+            return
+        }
+        
+        let vc = cls.init();
+        present(vc, animated: true, completion: nil)
+    }
+    
+    //MARK: 忘记密码
+    func fogClick() -> Void {
+
+        guard let cls = NSClassFromString(Bundle.main.namespace() + "." + "LYForgetViewController") as? UIViewController.Type else {
+            return
+        }
+        let vc = cls.init();
+        present(vc, animated: true, completion: nil)
+    }
+
+    //MARK: UI
     private func setupUI() {
         
-        titleView.backgroundColor = UIColor.cz_random()
         view.addSubview(titleView)
+        view.addSubview(txtField)
+        view.addSubview(pwdField)
+        view.addSubview(loginButton)
+        view.addSubview(regBtn)
+        view.addSubview(fogBtn)
+        view.addSubview(bottomView)
         
         titleView.snp.makeConstraints { (make) in
             make.width.equalTo(self.view.frame.size.width)
-            make.height.equalTo(60)
+            make.height.equalTo(66)
             make.top.equalTo(0)
+        }
+        
+        titleView .setButtonStateAndTitle(flag: true, title: NSLocalizedString("login_title", comment: "login_title"))
+        
+        txtField.backgroundColor = UIColor.cz_random()
+        txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "input_email_or_iphone"))
+        txtField.snp.makeConstraints { (make) in
+            
+            make.centerY.equalTo(self.view).offset(-80)
+            make.left.equalTo(50)
+            make.right.equalTo(-50)
+            make.height.equalTo(50)
+        }
+        
+        pwdField.backgroundColor = UIColor.cz_random()
+        pwdField.setTxtPlaceHolder(place: NSLocalizedString("input_pwd", comment: "input_pwd"))
+        pwdField.snp.makeConstraints { (make) in
+            make.top.equalTo(txtField.snp.bottom)
+            make.left.equalTo(50)
+            make.right.equalTo(-50)
+            make.height.equalTo(50)
+        }
+        
+        loginButton.backgroundColor = UIColor.cz_random()
+        loginButton.setTitleColor(UIColor.white, for: .normal)
+        loginButton.setTitle(NSLocalizedString("login", comment: "登录"), for: .normal)
+        loginButton.addTarget(self, action: #selector(loginButtonClick), for: .touchUpInside)
+        loginButton.snp.makeConstraints { (make) in
+            make.top.equalTo(pwdField.snp.bottom).offset(50)
+            make.left.equalTo(50)
+            make.right.equalTo(-50)
+            make.height.equalTo(50)
+        }
+        
+        regBtn.heroID = "reg"
+        regBtn.backgroundColor = UIColor.cz_random()
+        regBtn.setTitleColor(UIColor.white, for: .normal)
+        regBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        regBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        regBtn.titleLabel?.textAlignment = .left
+        regBtn.setTitle(NSLocalizedString("regist", comment: "注册"), for: .normal)
+        regBtn.addTarget(self, action: #selector(regClick), for: .touchUpInside)
+        regBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(loginButton.snp.bottom).offset(20)
+            make.left.equalTo(70)
+            make.width.equalTo(80)
+            make.height.equalTo(30)
+        }
+        
+        fogBtn.heroID = "fog"
+        fogBtn.backgroundColor = UIColor.cz_random()
+        fogBtn.setTitleColor(UIColor.white, for: .normal)
+        fogBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        fogBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        fogBtn.titleLabel?.textAlignment = .right
+        fogBtn.setTitle(NSLocalizedString("forget_pwd", comment: "忘记密码"), for: .normal)
+        fogBtn.addTarget(self, action: #selector(fogClick), for: .touchUpInside)
+        fogBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(loginButton.snp.bottom).offset(20)
+            make.right.equalTo(-70)
+            make.width.equalTo(80)
+            make.height.equalTo(30)
+        }
+        
+        bottomView.backgroundColor = UIColor.cz_random()
+        bottomView.snp.makeConstraints { (make) in
+            make.bottom.equalTo(self.view).offset(-30)
+            make.left.equalTo(50)
+            make.right.equalTo(-50)
+            make.height.equalTo(50)
         }
     }
 }

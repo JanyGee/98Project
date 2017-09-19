@@ -8,3 +8,11 @@
 "first_Page" = "首页";
 "Interactive" = "互动";
 "mine" = "我的";
+"login_title" = "Login";
+"input_email_or_iphone" = "填写手机/邮箱";
+"input_pwd" = "填写密码";
+"login" = "Log in";
+"regist" = "注册";
+"forget_pwd" = "忘记密码";
+"qq_login" = "QQ登陆";
+"weixin_login" = "微信登陆";
