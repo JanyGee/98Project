@@ -73,10 +73,10 @@ class LYLoginViewController: UIViewController {
             make.top.equalTo(0)
         }
         
-        titleView .setButtonStateAndTitle(flag: true, title: NSLocalizedString("login_title", comment: "login_title"))
+        titleView .setButtonStateAndTitle(flag: true, title: NSLocalizedString("login_title", comment: "登陆"))
         
         txtField.backgroundColor = UIColor.cz_random()
-        txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "input_email_or_iphone"))
+        txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "输入邮箱或者密码"))
         txtField.snp.makeConstraints { (make) in
             
             make.centerY.equalTo(self.view).offset(-80)
@@ -86,7 +86,7 @@ class LYLoginViewController: UIViewController {
         }
         
         pwdField.backgroundColor = UIColor.cz_random()
-        pwdField.setTxtPlaceHolder(place: NSLocalizedString("input_pwd", comment: "input_pwd"))
+        pwdField.setTxtPlaceHolder(place: NSLocalizedString("input_pwd", comment: "输入密码"))
         pwdField.snp.makeConstraints { (make) in
             make.top.equalTo(txtField.snp.bottom)
             make.left.equalTo(50)

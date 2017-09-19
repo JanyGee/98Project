@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310A03F61F717344002D1715 /* LYRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310A03F51F717344002D1715 /* LYRequestManager.swift */; };
 		311B9EB21F6F5BF700769113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B9EB11F6F5BF700769113 /* AppDelegate.swift */; };
 		311B9EB91F6F5BF700769113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EB81F6F5BF700769113 /* Assets.xcassets */; };
 		311B9EDF1F6F68C400769113 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 311B9EE11F6F68C400769113 /* Localizable.strings */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		034D22DC3678F2AE2E8C7E59 /* Pods-H98.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H98.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H98/Pods-H98.debug.xcconfig"; sourceTree = "<group>"; };
 		14FD004934316D339B2E2330 /* Pods-H98.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H98.release.xcconfig"; path = "Pods/Target Support Files/Pods-H98/Pods-H98.release.xcconfig"; sourceTree = "<group>"; };
+		310A03F51F717344002D1715 /* LYRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYRequestManager.swift; sourceTree = "<group>"; };
 		311B9EAE1F6F5BF700769113 /* H98.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H98.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311B9EB11F6F5BF700769113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		311B9EB81F6F5BF700769113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		310A03F01F7165D0002D1715 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				311B9EF31F6F69C300769113 /* Bundle+Extension.swift */,
+				31AA54301F710CD70046AAF5 /* UIView+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		311B9EA51F6F5BF700769113 = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +183,9 @@
 		311B9EDC1F6F684E00769113 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				311B9EF31F6F69C300769113 /* Bundle+Extension.swift */,
-				31AA54301F710CD70046AAF5 /* UIView+Extension.swift */,
+				310A03F01F7165D0002D1715 /* Extension */,
 				311B9EFA1F6F6C2700769113 /* Additions(快速遍历构造) */,
+				310A03F51F717344002D1715 /* LYRequestManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -467,6 +478,7 @@
 				311B9EEF1F6F693100769113 /* JanyNavigationController.swift in Sources */,
 				317165AF1F70F93900D9BE00 /* LYTxtView.swift in Sources */,
 				311B9F341F6FC23100769113 /* LYTitleView.swift in Sources */,
+				310A03F61F717344002D1715 /* LYRequestManager.swift in Sources */,
 				311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
