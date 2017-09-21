@@ -23,23 +23,22 @@ class LYCodeViewController: UIViewController {
 
 extension LYCodeViewController{
 
-   fileprivate func setupUI() {
-        
-        isHeroEnabled = true
-        view.heroID = "scanView"
+    fileprivate func setupUI() {
         
         view.addSubview(titleView)
-        
+            
         titleView.snp.makeConstraints { (make) in
+                
             make.left.equalTo(0)
             make.right.equalTo(0)
             make.height.equalTo(66)
             make.top.equalTo(0)
         }
-        
+            
         titleView.setUIState(flag: false, bkImage: "", titleStr: NSLocalizedString("scaning_code", comment: "扫描二维码"))
         titleView.leftButtonClickBlock = {[weak self] in
             self?.dismiss(animated: true, completion: nil)
         }
+
     }
 }

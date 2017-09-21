@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>iLe儿童手表需要使用您的位置来为您提供定位服务</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>iLe儿童手表需要使用您的照片库，才能更好的完成您的体验！</string>
+	<key>NSCameraUsageDescription</key>
+	<string>iLe儿童手表需要使用您的相机，扫描手表上的二维码！</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -45,6 +45,7 @@
 		317165AF1F70F93900D9BE00 /* LYTxtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317165AE1F70F93900D9BE00 /* LYTxtView.swift */; };
 		31AA54311F710CD70046AAF5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA54301F710CD70046AAF5 /* UIView+Extension.swift */; };
 		31AA54331F7117680046AAF5 /* LYSecondLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA54321F7117680046AAF5 /* LYSecondLoginView.swift */; };
+		31D70F291F73490300E8CD3C /* UIImage+GenerateQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D70F281F73490300E8CD3C /* UIImage+GenerateQRCode.m */; };
 		A1D59F3DA8AAAF7D0D995FE5 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36AB000D3778114A7E18EF2 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,8 @@
 		317165AE1F70F93900D9BE00 /* LYTxtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYTxtView.swift; sourceTree = "<group>"; };
 		31AA54301F710CD70046AAF5 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		31AA54321F7117680046AAF5 /* LYSecondLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYSecondLoginView.swift; sourceTree = "<group>"; };
+		31D70F271F73490300E8CD3C /* UIImage+GenerateQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GenerateQRCode.h"; sourceTree = "<group>"; };
+		31D70F281F73490300E8CD3C /* UIImage+GenerateQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GenerateQRCode.m"; sourceTree = "<group>"; };
 		B36AB000D3778114A7E18EF2 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -196,8 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				310A03F01F7165D0002D1715 /* Extension */,
+				31D70F2A1F734A1200E8CD3C /* Request(网络请求) */,
+				31D70F261F7348D900E8CD3C /* QRCode(二维码生成) */,
 				311B9EFA1F6F6C2700769113 /* Additions(快速遍历构造) */,
-				310A03F51F717344002D1715 /* LYRequestManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -321,6 +325,23 @@
 				316C4B451F721A7F00A59230 /* LYInputViewController.swift */,
 			);
 			name = "Bindle(绑定)";
+			sourceTree = "<group>";
+		};
+		31D70F261F7348D900E8CD3C /* QRCode(二维码生成) */ = {
+			isa = PBXGroup;
+			children = (
+				31D70F271F73490300E8CD3C /* UIImage+GenerateQRCode.h */,
+				31D70F281F73490300E8CD3C /* UIImage+GenerateQRCode.m */,
+			);
+			name = "QRCode(二维码生成)";
+			sourceTree = "<group>";
+		};
+		31D70F2A1F734A1200E8CD3C /* Request(网络请求) */ = {
+			isa = PBXGroup;
+			children = (
+				310A03F51F717344002D1715 /* LYRequestManager.swift */,
+			);
+			name = "Request(网络请求)";
 			sourceTree = "<group>";
 		};
 		FB386EAF13B77EA85FDC7262 /* Pods */ = {
@@ -457,6 +478,7 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -465,6 +487,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/swiftScan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,6 +534,7 @@
 				311B9F341F6FC23100769113 /* LYTitleView.swift in Sources */,
 				310A03F61F717344002D1715 /* LYRequestManager.swift in Sources */,
 				316C4B4A1F72617A00A59230 /* LYCustomTopView.swift in Sources */,
+				31D70F291F73490300E8CD3C /* UIImage+GenerateQRCode.m in Sources */,
 				311B9F281F6F766B00769113 /* LYInteractiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +673,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "H98/H98-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -667,6 +692,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "H98/H98-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

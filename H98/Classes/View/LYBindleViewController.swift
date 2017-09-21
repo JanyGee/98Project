@@ -75,6 +75,7 @@ extension LYBindleViewController{
             }
             
             let vc = cls.init()
+            vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             self.present(vc, animated: true, completion: nil)
         }
         
