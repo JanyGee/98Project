@@ -16,11 +16,11 @@ extension UIView{
     ///   - corners: 需要实现为圆角的角，可传入多个
     ///   - radii: 圆角半径
     func corner(byRoundingCorners corners: UIRectCorner, radii: CGFloat) {
-        let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
+        let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
         let maskLayer = CAShapeLayer()
-        maskLayer.frame = self.bounds
+        maskLayer.frame = bounds
         maskLayer.path = maskPath.cgPath
-        self.layer.mask = maskLayer
+        layer.mask = maskLayer
     }
     
 }

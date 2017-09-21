@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow()
-        window?.backgroundColor = UIColor.white
-        let vc = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as! UIViewController.Type
+        window?.backgroundColor = UIColor.black
+        let vc = NSClassFromString(Bundle.main.namespace() + "." + "JanyMainViewController") as! UIViewController.Type
         window?.rootViewController = vc.init()
         window?.makeKeyAndVisible()
         return true

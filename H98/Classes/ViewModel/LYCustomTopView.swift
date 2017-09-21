@@ -1,20 +1,20 @@
 //
-//  LYTitleView.swift
+//  LYCustomTopView.swift
 //  H98
 //
-//  Created by Jany on 17/9/18.
+//  Created by Jany on 17/9/20.
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
 import UIKit
 import YYKit
 
-class LYTitleView: UIView {
+class LYCustomTopView: UIView {
 
+    lazy var bkImageView:UIImageView = UIImageView()
     private lazy var titleLabel:YYLabel = YYLabel()
     private lazy var leftButton:UIButton = UIButton(type: .custom)
     var leftButtonClickBlock:(()->())?
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,13 +24,41 @@ class LYTitleView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
     
+    func leftButtonClick() {
+        leftButtonClickBlock?()
+    }
+    
+    func setUIState(flag:Bool,bkImage:String,titleStr:String) -> Void {
+        titleLabel.isHidden = flag
+        titleLabel.text = titleStr
+        bkImageView.image = UIImage(named: bkImage)
+    }
+
     private func setupUI() {
         
-        //leftButton.backgroundColor = UIColor.cz_random()
-        leftButton.addTarget(self, action: #selector(leftButtonClick), for: .touchUpInside)
+        addSubview(bkImageView)
         addSubview(leftButton)
+        addSubview(titleLabel)
         
+        bkImageView.backgroundColor = UIColor.cz_random()
+        bkImageView.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+        }
+        
+        //leftButton.backgroundColor = UIColor.cz_random()
+        leftButton.setBackgroundImage(UIImage(named: "back_image"), for:.normal)
+        leftButton.addTarget(self, action: #selector(leftButtonClick), for: .touchUpInside)
         leftButton.snp.makeConstraints { (make) in
             
             make.size.equalTo(CGSize(width: 30, height: 30))
@@ -38,12 +66,10 @@ class LYTitleView: UIView {
             make.bottom.equalTo(-5)
         }
         
-        titleLabel = YYLabel()
         //titleLabel.backgroundColor = UIColor.cz_random()
         titleLabel.textColor = UIColor.white
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.systemFont(ofSize: 20)
-        addSubview(titleLabel)
         
         titleLabel.snp.makeConstraints { (make) in
             make.centerX.equalTo(self)
@@ -53,17 +79,4 @@ class LYTitleView: UIView {
         }
     }
     
-    func setButtonStateAndTitle(flag:Bool = false,img:String = "back_image",title:String) -> Void {
-        
-        leftButton.isHidden = flag
-        let image = UIImage(named: img)
-        leftButton.setBackgroundImage(image, for:.normal)
-        
-        titleLabel.text = title
-        titleLabel.sizeToFit()
-    }
-    
-    func leftButtonClick() {
-        leftButtonClickBlock?()
-    }
 }

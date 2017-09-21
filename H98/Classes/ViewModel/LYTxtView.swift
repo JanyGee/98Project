@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import SnapKit
 
 class LYTxtView: UIView {
 
     lazy var txt:UITextField = UITextField()
-    lazy var vLineView:UIView = UIView()
     lazy var hLineView:UIView = UIView()
     
     override init(frame: CGRect) {
@@ -27,7 +25,6 @@ class LYTxtView: UIView {
     private func setupUI() -> Void {
         
         addSubview(txt)
-        addSubview(vLineView)
         addSubview(hLineView)
         
         txt.borderStyle = .none
@@ -51,6 +48,10 @@ class LYTxtView: UIView {
     
     public func setTxtPlaceHolder(place:String) {
         txt.placeholder = place
+    }
+    
+    func setTextFieldType(type:UIKeyboardType = .default) -> Void {
+        txt.keyboardType = type
     }
 
 }

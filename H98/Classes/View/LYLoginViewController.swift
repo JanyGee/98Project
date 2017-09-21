@@ -68,13 +68,15 @@ class LYLoginViewController: UIViewController {
         view.addSubview(bottomView)
         
         titleView.snp.makeConstraints { (make) in
-            make.width.equalTo(self.view.frame.size.width)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
             make.height.equalTo(66)
             make.top.equalTo(0)
         }
         
         titleView .setButtonStateAndTitle(flag: true, title: NSLocalizedString("login_title", comment: "登陆"))
         
+        txtField.heroID = "count"
         txtField.backgroundColor = UIColor.cz_random()
         txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "输入邮箱或者密码"))
         txtField.snp.makeConstraints { (make) in
@@ -85,6 +87,7 @@ class LYLoginViewController: UIViewController {
             make.height.equalTo(50)
         }
         
+        pwdField.heroID = "code"
         pwdField.backgroundColor = UIColor.cz_random()
         pwdField.setTxtPlaceHolder(place: NSLocalizedString("input_pwd", comment: "输入密码"))
         pwdField.snp.makeConstraints { (make) in
@@ -94,6 +97,7 @@ class LYLoginViewController: UIViewController {
             make.height.equalTo(50)
         }
         
+        loginButton.heroID = "log"
         loginButton.backgroundColor = UIColor.cz_random()
         loginButton.setTitleColor(UIColor.white, for: .normal)
         loginButton.setTitle(NSLocalizedString("login", comment: "登录"), for: .normal)
