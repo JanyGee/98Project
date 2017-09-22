@@ -12,6 +12,7 @@ import Hero
 class LYCodeViewController: UIViewController {
 
     fileprivate lazy var titleView:LYCustomTopView = LYCustomTopView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +35,8 @@ extension LYCodeViewController{
             make.height.equalTo(66)
             make.top.equalTo(0)
         }
-            
+        
+
         titleView.setUIState(flag: false, bkImage: "", titleStr: NSLocalizedString("scaning_code", comment: "扫描二维码"))
         titleView.leftButtonClickBlock = {[weak self] in
             self?.dismiss(animated: true, completion: nil)
